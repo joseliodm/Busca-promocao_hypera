@@ -41,8 +41,8 @@ page.setDefaultNavigationTimeout(0); //Acessa a página sem esperar o timeout
 await page.goto('https://www.parceirohypera.com.br/Campanha');
 await page.click('#prosseguirPolitCookie');
 await page.waitForSelector('input[name="usr"]');
-await page.type('input[name="usr"]', '15986565000167',{delay:100}); // Email
-await page.type('input[name="psw"]', 'plus2021', {delay:100}); // Senha
+await page.type('input[name="usr"]', 'Aqui vai o login',{delay:100}); // Email
+await page.type('input[name="psw"]', 'Aqui vai a senha', {delay:100}); // Senha
 
 await page.keyboard.press('Enter');  // Clica no botão de login
 
